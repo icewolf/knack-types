@@ -1,8 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.KnFieldType = exports.LabelFormat = exports.$ = exports.Knack = void 0;
-exports.Knack = window.Knack || {};
-exports.$ = exports.Knack.$;
+exports.KnFieldType = exports.LabelFormat = void 0;
 var LabelFormat;
 (function (LabelFormat) {
     LabelFormat["Default"] = "default";

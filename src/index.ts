@@ -1,9 +1,3 @@
-declare global {
-  interface Window {
-    Knack: any;
-  }
-}
-
 export type connectionPickerFn = (this: JQuery, options: KnConnectionGenOptions) => JQuery;
 
 interface KnJQuery extends JQueryStatic {
@@ -38,8 +32,6 @@ export interface KnRoot {
   scenes: KnSceneCollection;
   [key: string]: any;
 }
-export const Knack: KnRoot = window.Knack || {};
-export const { $ } = Knack;
 export interface KnSceneAttributes {
   _id: string;
   authenticated: boolean;
