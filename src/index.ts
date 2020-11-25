@@ -1,5 +1,3 @@
-import '@types/jquery';
-
 declare global {
   interface Window {
     Knack: any;
