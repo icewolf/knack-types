@@ -397,6 +397,41 @@ export interface KnFieldRelationship {
   belongs_to: string;
 }
 
+export enum KnFieldType {
+  ADDRESS = 'address',
+  AUTO_INCREMENT = 'auto_increment',
+  AVERAGE = 'average',
+  BOOLEAN = 'boolean',
+  CONCATENATION = 'concatenation',
+  CONNECTION = 'connection',
+  COUNT = 'count',
+  CURRENCY = 'currency',
+  DATE_TIME = 'date_time',
+  EMAIL = 'email',
+  EQUATION = 'equation',
+  FILE = 'file',
+  IMAGE = 'image',
+  LINK = 'link',
+  MAX = 'max',
+  MIN = 'min',
+  MULTIPLE_CHOICE = 'multiple_choice',
+  NAME = 'name',
+  NUMBER = 'number',
+  PARAGRAPH_TEXT = 'paragraph_text',
+  PASSWORD = 'password',
+  PHONE = 'phone',
+  RATING = 'rating',
+  RICH_TEXT = 'rich_text',
+  SECTION_BREAK = 'section_break',
+  SHORT_TEXT = 'short_text',
+  SIGNATURE = 'signature',
+  SUM = 'sum',
+  TIMER = 'timer',
+  USER = 'user',
+  USER_ROLES = 'user_roles',
+  VIDEO = 'video',
+}
+
 export interface KnFieldAttributes {
   key: string;
   relationship: KnFieldRelationship;
@@ -409,7 +444,7 @@ export interface KnFieldAttributes {
   user: boolean;
   unique: boolean;
   required: boolean;
-  type: 'connection' | string;
+  type: KnFieldType;
   [key: string]: any;
 }
 export interface KnFormDate {
