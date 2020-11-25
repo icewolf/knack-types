@@ -1,12 +1,13 @@
 {
   "compilerOptions": {
+    "rootDir": "./src",
     "outDir": "./dist",
-    "module": "ESNext",
+    "module": "UMD",
     "moduleResolution": "node",
     "allowSyntheticDefaultImports": true,
     "esModuleInterop": true,
     "allowJs": true,
-    "target": "es2015",
+    "target": "es5",
     "lib": ["ESNext", "ES2019", "DOM"],
     "experimentalDecorators": true,
     "noImplicitAny": true,
@@ -15,7 +16,7 @@
     "paths": {
       "@/*": ["./src/*"]
     },
-    "importsNotUsedAsValues": "preserve" // Fix watching https://github.com/TypeStrong/fork-ts-checker-webpack-plugin#type-only-modules-watching
+    "importsNotUsedAsValues": "preserve"
   },
   "include": ["./src/**/*"]
 }
