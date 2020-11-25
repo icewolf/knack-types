@@ -1,6 +1,7 @@
 {
   "name": "knack-types",
   "version": "1.5.7",
+  "main": "src/index.ts",
   "devDependencies": {
     "@types/backbone": "^1.4.5",
     "@types/jquery": "^3.3.31",
