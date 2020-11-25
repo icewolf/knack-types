@@ -1,0 +1,14 @@
+node_modules/
+dist*/
+.tool-versions
+*.log
+notes/
+# Local Netlify folder
+.netlify
+
+.yarn/*
+!.yarn/releases
+!.yarn/plugins
+!.yarn/sdks
+!.yarn/versions
+.pnp.*
