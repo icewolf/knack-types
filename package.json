@@ -1,10 +1,10 @@
 {
   "name": "knack-types",
-  "version": "1.5.6",
+  "version": "1.5.7",
   "devDependencies": {
+    "@types/backbone": "^1.4.5",
     "@types/jquery": "^3.3.31",
     "@types/jquery.timepicker": "^0.3.29",
-    "@types/jqueryui": "^1.12.9",
-    "@types/backbone": "^1.4.5"
+    "@types/jqueryui": "^1.12.9"
   }
 }
