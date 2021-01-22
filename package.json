@@ -1,6 +1,6 @@
 {
   "name": "knack-types",
-  "version": "1.5.15",
+  "version": "1.5.16",
   "main": "dist/index.js",
   "types": "src/index.ts",
   "scripts": {
