@@ -283,17 +283,38 @@ export interface KnViewValues {
   proceed: boolean;
 }
 
+export enum FieldRuleActionType {
+  HIDE = 'hide',
+  SHOW = 'show',
+}
+export interface FieldRuleAction {
+  action: FieldRuleActionType;
+}
+
+export interface FieldRule {
+  actions: [];
+  criteria: [];
+}
+
+export interface FieldRules {
+  [fieldKey: string]: FieldRule[];
+}
+
 export interface KnView extends Backbone.Model {
   [key: string]: any;
   attributes: KnViewAttributes;
   record?: KnRecord;
   model: KnViewModel;
+  rules_by_field: FieldRules;
   el: HTMLDivElement;
   $el: JQuery;
   getInputs?: () => FormInputField[];
   getValues?(options?: GetValuesOptions): KnViewValues;
   renderRecordNav(): void;
   renderRecords(): void;
+
+  // form view fns
+  handleSubmitForm?(e: Event): void;
 }
 
 export interface KnViewCalendar extends KnView {
