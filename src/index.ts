@@ -263,6 +263,7 @@ export interface KnViewAttributes {
 
 export interface GetValuesOptions {
   local: boolean; // prevents showing stuff like recurring event edit modal
+  ignore_read_only: boolean;
 }
 
 export interface FormInputField {
