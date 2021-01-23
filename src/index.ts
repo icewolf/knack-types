@@ -286,15 +286,20 @@ export interface KnViewValues {
 
 export enum FieldRuleActionType {
   HIDE = 'hide',
+  HIDE_SHOW = 'hide-show',
   SHOW = 'show',
+  SHOW_HIDE = 'show-hide',
+  LABEL = 'label',
 }
 export interface FieldRuleAction {
   action: FieldRuleActionType;
+  field: string;
+  value: any;
 }
 
 export interface FieldRule {
-  actions: [];
-  criteria: [];
+  actions: FieldRuleAction[];
+  criteria: KnFilterRule[];
 }
 
 export interface FieldRules {
@@ -478,6 +483,7 @@ export interface KnApiError {
 export interface KnApiErrors {
   errors: KnApiError[];
 }
+
 export interface KnFilterRule {
   field: string;
   operator: string;
