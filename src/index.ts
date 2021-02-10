@@ -345,6 +345,13 @@ export interface KnViews {
 export interface KnConnection {
   id: string;
   identifier: string;
+  object: string;
+  key: string;
+  name: string;
+  field: KnFieldAttributes;
+  has: string;
+  belongs_to: string;
+  relationship_type: string;
 }
 export interface KnRecord {
   id?: string;
@@ -361,7 +368,35 @@ export interface KnRecordResponse {
   record: KnRecord;
   submit_key: boolean;
 }
-export interface KnObject {
+
+export interface Inflections {
+  singular: string;
+  plural:   string;
+}
+
+export interface KnObjectSort {
+  field: string;
+  order: string;
+}
+
+export interface KnObjectAttributes {
+  inflections: Inflections;
+  connections: KnConnection;
+  sort: KnObjectSort;
+  user: boolean;
+  status: string;
+  tasks: any[];
+  type: string;
+  name: string;
+  fields: KnFieldAttributes[];
+  template: string;
+  key: string;
+  identifier: string;
+  conns: KnConnection[];
+}
+
+export interface KnObject extends Backbone.Model {
+  attributes: KnObjectAttributes;
   [key: string]: any;
 }
 export interface KnDateBase {
