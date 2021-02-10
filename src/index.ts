@@ -382,7 +382,7 @@ export interface KnObjectSort {
 
 export interface KnObjectAttributes {
   inflections: Inflections;
-  connections: Record<'outbound' | 'inbound', KnFieldRelationship>;
+  connections: Record<'outbound' | 'inbound', KnFieldRelationship[]>;
   sort: KnObjectSort;
   user: boolean;
   status: string;
