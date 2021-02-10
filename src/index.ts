@@ -500,7 +500,7 @@ export enum KnFieldType {
 
 export interface KnFieldAttributes {
   key: string;
-  relationship: string;
+  relationship: KnFieldRelationship;
   name: string;
   _id: string;
   object_key: string;
