@@ -17,6 +17,7 @@ export interface HashScene {
 export interface KnRoot {
   $: KnJQuery;
   views: KnViews;
+  objects: KnObjects;
   fields: {
     [key: string]: KnField;
   };
@@ -371,7 +372,7 @@ export interface KnRecordResponse {
 
 export interface Inflections {
   singular: string;
-  plural:   string;
+  plural: string;
 }
 
 export interface KnObjectSort {
@@ -397,8 +398,12 @@ export interface KnObjectAttributes {
 
 export interface KnObject extends Backbone.Model {
   attributes: KnObjectAttributes;
-  [key: string]: any;
 }
+
+export interface KnObjects extends Backbone.Collection<KnObject> {
+  _byId: { [object_key: string]: KnObject };
+}
+
 export interface KnDateBase {
   date: string;
   date_formatted: string;
