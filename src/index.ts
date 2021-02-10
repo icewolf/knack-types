@@ -382,7 +382,7 @@ export interface KnObjectSort {
 
 export interface KnObjectAttributes {
   inflections: Inflections;
-  connections: KnConnection;
+  connections: Record<'outbound' | 'inbound', KnFieldRelationship>;
   sort: KnObjectSort;
   user: boolean;
   status: string;
@@ -451,7 +451,13 @@ export interface KnField {
   [key: string]: any;
 }
 
+export enum KnFieldRelationshipType {
+  Local = 'local',
+}
 export interface KnFieldRelationship {
+  key: string;
+  name: string;
+  relationship_type: KnFieldRelationshipType;
   object: string;
   has: string;
   belongs_to: string;
@@ -494,7 +500,7 @@ export enum KnFieldType {
 
 export interface KnFieldAttributes {
   key: string;
-  relationship: KnFieldRelationship;
+  relationship: string;
   name: string;
   _id: string;
   object_key: string;
