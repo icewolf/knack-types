@@ -96,7 +96,7 @@ export interface KnViewModel extends Backbone.Model {
   view: KnViewModelView;
   attributes: KnRecord;
   data: Backbone.Collection;
-  fetch: (filters?: { filters?: KnFilter | string; [key: string]: any }) => undefined;
+  fetch: (options?: Backbone.ModelFetchOptions & { filters?: KnFilter | string; [key: string]: any }) => JQueryXHR;
   [key: string]: any;
 }
 // todo: finish documenting
@@ -129,18 +129,19 @@ export interface KnFormInput {
   input_type: 'connection' | string;
   value: string;
 }
-export type KnViewType =
-  | 'form'
-  | 'table'
-  | 'list'
-  | 'search'
-  | 'map'
-  | 'calendar'
-  | 'report'
-  | 'details'
-  | 'checkout'
-  | 'menu'
-  | 'login';
+export enum KnViewType {
+  Form = 'form',
+  Table = 'table',
+  List = 'list',
+  Search = 'search',
+  Map = 'map',
+  Calendar = 'calendar',
+  Report = 'report',
+  Details = 'details',
+  Checkout = 'checkout',
+  Menu = 'menu',
+  Login = 'login',
+}
 export type KnFormAction = 'insert' | 'update';
 
 export interface KnViewSort {

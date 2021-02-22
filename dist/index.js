@@ -1,11 +1,37 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.KnFieldType = exports.LabelFormat = void 0;
+exports.KnFieldType = exports.KnFieldRelationshipType = exports.FieldRuleActionType = exports.LabelFormat = exports.KnViewType = void 0;
+var KnViewType;
+(function (KnViewType) {
+    KnViewType["Form"] = "form";
+    KnViewType["Table"] = "table";
+    KnViewType["List"] = "list";
+    KnViewType["Search"] = "search";
+    KnViewType["Map"] = "map";
+    KnViewType["Calendar"] = "calendar";
+    KnViewType["Report"] = "report";
+    KnViewType["Details"] = "details";
+    KnViewType["Checkout"] = "checkout";
+    KnViewType["Menu"] = "menu";
+    KnViewType["Login"] = "login";
+})(KnViewType = exports.KnViewType || (exports.KnViewType = {}));
 var LabelFormat;
 (function (LabelFormat) {
     LabelFormat["Default"] = "default";
     LabelFormat["None"] = "none";
 })(LabelFormat = exports.LabelFormat || (exports.LabelFormat = {}));
+var FieldRuleActionType;
+(function (FieldRuleActionType) {
+    FieldRuleActionType["HIDE"] = "hide";
+    FieldRuleActionType["HIDE_SHOW"] = "hide-show";
+    FieldRuleActionType["SHOW"] = "show";
+    FieldRuleActionType["SHOW_HIDE"] = "show-hide";
+    FieldRuleActionType["LABEL"] = "label";
+})(FieldRuleActionType = exports.FieldRuleActionType || (exports.FieldRuleActionType = {}));
+var KnFieldRelationshipType;
+(function (KnFieldRelationshipType) {
+    KnFieldRelationshipType["Local"] = "local";
+})(KnFieldRelationshipType = exports.KnFieldRelationshipType || (exports.KnFieldRelationshipType = {}));
 var KnFieldType;
 (function (KnFieldType) {
     KnFieldType["ADDRESS"] = "address";
