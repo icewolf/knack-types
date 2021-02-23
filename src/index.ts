@@ -172,6 +172,7 @@ export interface ViewGroup {
 export interface ViewGroupColumn {
   key: string;
   name: string;
+  field?: Partial<KnFieldAttributes>;
   type?: string;
   thumb_key?: string;
   object?: Connection;
