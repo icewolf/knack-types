@@ -100,11 +100,14 @@ export interface KnViewModel extends Backbone.Model {
   [key: string]: any;
 }
 // todo: finish documenting
-export interface KnViewSource {
+export interface KnViewSourceBase {
   authenticated_user: boolean;
   connection_key: string;
   object: string;
   sort: KnViewSort[];
+}
+export interface KnViewSource extends KnViewSourceBase {
+  parent_source: KnViewSourceBase;
 }
 export interface KnConnectionSource {
   type: 'user' | 'record' | string;
