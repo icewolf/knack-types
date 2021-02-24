@@ -188,6 +188,7 @@ export interface ViewGroupColumn {
   conn_separator?: string;
   scene?: string;
   header?: string;
+  icon?: KnIcon;
 }
 
 export interface Connection {
