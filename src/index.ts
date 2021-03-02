@@ -323,6 +323,7 @@ export interface KnView extends Backbone.Model {
   $el: JQuery;
   getInputs?: () => FormInputField[];
   getValues?(options?: GetValuesOptions): KnViewValues;
+  getFilters?(): KnFilter | KnFilterRule[];
   renderRecordNav(): void;
   renderRecords(): void;
 
@@ -539,7 +540,8 @@ export interface KnApiErrors {
 export interface KnFilterRule {
   field: string;
   operator: string;
-  value: any;
+  value?: any;
+  field_name?: string;
 }
 export interface KnFilter {
   match: string | 'and' | 'or';
