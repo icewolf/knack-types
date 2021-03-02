@@ -505,6 +505,14 @@ export enum KnFieldType {
   VIDEO = 'video',
 }
 
+export interface KnFieldMultipleChoiceFormat {
+  blank: string;
+  default: string;
+  options: string[];
+  sorting: 'alphabetical' | 'custom';
+  type: 'single' | 'multi' | 'checkboxes' | 'radios';
+}
+
 export interface KnFieldAttributes {
   key: string;
   relationship: KnFieldRelationship;
@@ -518,6 +526,7 @@ export interface KnFieldAttributes {
   unique: boolean;
   required: boolean;
   type: KnFieldType;
+  format?: KnFieldMultipleChoiceFormat;
   [key: string]: any;
 }
 export interface KnFormDate {
