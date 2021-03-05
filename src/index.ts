@@ -511,6 +511,8 @@ export interface KnFieldMultipleChoiceFormat {
   options: string[];
   sorting: 'alphabetical' | 'custom';
   type: 'single' | 'multi' | 'checkboxes' | 'radios';
+  /** TODO: support format for all field types */
+  [key: string]: any;
 }
 
 export interface KnFieldAttributes {
