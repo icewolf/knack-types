@@ -11,3 +11,4 @@ notes/
 !.yarn/sdks
 !.yarn/versions
 .pnp.*
+dist/*

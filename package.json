@@ -1,12 +1,22 @@
 {
   "name": "knack-types",
   "version": "1.8.6",
+  "license": "UNLICENSED",
+  "repository": "https://gitlab.com/HumanoidSolutions/knack-types.git",
   "main": "dist/index.js",
-  "types": "src/index.ts",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist/**"
+  ],
   "scripts": {
     "build": "tsc"
   },
   "devDependencies": {
+    "@semantic-release/changelog": "^5.0.1",
+    "@semantic-release/commit-analyzer": "^8.0.1",
+    "@semantic-release/git": "^9.0.0",
+    "@semantic-release/gitlab": "^6.0.9",
+    "@semantic-release/release-notes-generator": "^9.0.2",
     "@types/backbone": "^1.4.5",
     "@types/jquery": "^3.3.31",
     "@types/jquery.timepicker": "^0.3.29",
@@ -23,9 +33,13 @@
     "eslint-plugin-import": "^2.22.1",
     "eslint-plugin-prettier": "^3.0.1",
     "eslint-plugin-vue": "^7.1.0",
+    "semantic-release": "^17.4.2",
     "vue-eslint-parser": "^7.1.1"
   },
   "dependencies": {
     "typescript": "^4.1.2"
+  },
+  "publishConfig": {
+    "access": "restricted"
   }
 }

@@ -16,7 +16,8 @@
     "paths": {
       "@/*": ["./src/*"]
     },
-    "importsNotUsedAsValues": "preserve"
+    "importsNotUsedAsValues": "preserve",
+    "declaration": true
   },
   "include": ["./src/**/*"],
   "exclude": ["node_modules", "dist"]
