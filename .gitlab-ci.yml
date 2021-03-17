@@ -7,6 +7,9 @@ before_script:
 publish:
   image: node:14
   stage: release
+  cache:
+    paths:
+      - .yarn
   script:
     - yarn build
     - npx semantic-release
