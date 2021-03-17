@@ -317,7 +317,10 @@ export interface KnView extends Backbone.Model {
   [key: string]: any;
   attributes: KnViewAttributes;
   record?: KnRecord;
-  model: KnViewModel;
+  /** Available for all views, except checkout */
+  model?: KnViewModel;
+  /** Only for checkout views */
+  view?: KnViewModelView;
   rules_by_field: FieldRules;
   el: HTMLDivElement;
   $el: JQuery;

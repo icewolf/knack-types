@@ -1,6 +1,6 @@
 {
   "name": "knack-types",
-  "version": "1.8.6",
+  "version": "1.8.7",
   "license": "UNLICENSED",
   "repository": "https://gitlab.com/HumanoidSolutions/knack-types.git",
   "main": "dist/index.js",
