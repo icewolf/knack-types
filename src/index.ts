@@ -333,6 +333,7 @@ export interface KnView extends Backbone.Model {
   renderRecords(): void;
 
   // form view fns
+  /** Trigger form submission */
   handleSubmitForm?(e: Event): void;
 }
 
