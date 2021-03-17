@@ -1,6 +1,6 @@
 {
   "name": "knack-types",
-  "version": "1.8.7",
+  "version": "1.8.8",
   "license": "UNLICENSED",
   "repository": "https://gitlab.com/HumanoidSolutions/knack-types.git",
   "main": "dist/index.js",
@@ -9,7 +9,8 @@
     "dist/**"
   ],
   "scripts": {
-    "build": "tsc"
+    "build": "tsc",
+    "install": "npm run build"
   },
   "devDependencies": {
     "@semantic-release/changelog": "^5.0.1",
