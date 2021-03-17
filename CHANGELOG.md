@@ -1,3 +1,10 @@
+## [1.8.8](https://gitlab.com/HumanoidSolutions/knack-types/compare/v1.8.7...v1.8.8) (2021-03-17)
+
+
+### Bug Fixes
+
+* make KnView.el optional due to checkout ([6573783](https://gitlab.com/HumanoidSolutions/knack-types/commit/6573783c3b483c66bd7308bb3e71efce489f1d37))
+
 ## [1.8.7](https://gitlab.com/HumanoidSolutions/knack-types/compare/v1.8.6...v1.8.7) (2021-03-17)
 
 
