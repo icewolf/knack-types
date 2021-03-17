@@ -322,8 +322,10 @@ export interface KnView extends Backbone.Model {
   /** Only for checkout views */
   view?: KnViewModelView;
   rules_by_field: FieldRules;
-  el: HTMLDivElement;
-  $el: JQuery;
+  /** Available on all views, except checkout */
+  el?: HTMLDivElement;
+  /** Available on all views, except checkout */
+  $el?: JQuery;
   getInputs?: () => FormInputField[];
   getValues?(options?: GetValuesOptions): KnViewValues;
   getFilters?(): KnFilter | KnFilterRule[];
