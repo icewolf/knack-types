@@ -1,3 +1,10 @@
+## [1.8.9](https://gitlab.com/HumanoidSolutions/knack-types/compare/v1.8.8...v1.8.9) (2021-03-17)
+
+
+### Bug Fixes
+
+* add comments ([0795eb4](https://gitlab.com/HumanoidSolutions/knack-types/commit/0795eb4d7b4b031edeb9d3e6c8ffeec1aaf19813))
+
 ## [1.8.8](https://gitlab.com/HumanoidSolutions/knack-types/compare/v1.8.7...v1.8.8) (2021-03-17)
 
 
