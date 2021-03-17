@@ -1,5 +1,5 @@
 {
-  "name": "knack-types",
+  "name": "@humanoidsolutions/knack-types",
   "version": "1.8.8",
   "license": "UNLICENSED",
   "repository": "https://gitlab.com/HumanoidSolutions/knack-types.git",
@@ -42,6 +42,6 @@
     "typescript": "^4.1.2"
   },
   "publishConfig": {
-    "access": "restricted"
+    "@humanoidsolutions:registry": "https://gitlab.com/api/v4/projects/22696442/packages/npm/"
   }
 }
