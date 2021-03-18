@@ -1,3 +1,10 @@
+## [1.8.11](https://gitlab.com/HumanoidSolutions/knack-types/compare/v1.8.10...v1.8.11) (2021-03-18)
+
+
+### Bug Fixes
+
+* document GetValuesOptions.local ([ca8e85a](https://gitlab.com/HumanoidSolutions/knack-types/commit/ca8e85a9008275ca10edbd6b470d5c9dfc6662bf))
+
 ## [1.8.10](https://gitlab.com/HumanoidSolutions/knack-types/compare/v1.8.9...v1.8.10) (2021-03-18)
 
 
