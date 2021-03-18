@@ -1,3 +1,10 @@
+## [1.8.13](https://gitlab.com/HumanoidSolutions/knack-types/compare/v1.8.12...v1.8.13) (2021-03-18)
+
+
+### Bug Fixes
+
+* don't rebuild on install ([3ccf3e3](https://gitlab.com/HumanoidSolutions/knack-types/commit/3ccf3e3f88684058f47d246315f4f28ec90740c1))
+
 ## [1.8.12](https://gitlab.com/HumanoidSolutions/knack-types/compare/v1.8.11...v1.8.12) (2021-03-18)
 
 
