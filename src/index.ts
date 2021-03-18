@@ -29,7 +29,8 @@ export interface KnRoot {
   checkRule: (rule: any, record: KnRecord) => boolean;
   getHashScenes(): HashScene[];
   getSceneHash: () => string;
-  getQueryString: (newQueryString?: { [key: string]: string }) => string; // get or set current query string
+  /** Get or set current query string */
+  getQueryString: (newQueryString?: { [key: string]: string }) => string;
   router: KnRouter;
   scenes: KnSceneCollection;
   [key: string]: any;
