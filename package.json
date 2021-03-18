@@ -10,7 +10,7 @@
   ],
   "scripts": {
     "build": "tsc",
-    "install": "npm run build"
+    "prepack": "npm run build"
   },
   "devDependencies": {
     "@semantic-release/changelog": "^5.0.1",
