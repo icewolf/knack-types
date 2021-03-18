@@ -1,3 +1,10 @@
+## [1.8.12](https://gitlab.com/HumanoidSolutions/knack-types/compare/v1.8.11...v1.8.12) (2021-03-18)
+
+
+### Bug Fixes
+
+* correct registry in package.json ([9714bb2](https://gitlab.com/HumanoidSolutions/knack-types/commit/9714bb297a91d31db7200c88cd2b212349714e8e))
+
 ## [1.8.11](https://gitlab.com/HumanoidSolutions/knack-types/compare/v1.8.10...v1.8.11) (2021-03-18)
 
 
