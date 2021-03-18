@@ -1,3 +1,10 @@
+## [1.8.10](https://gitlab.com/HumanoidSolutions/knack-types/compare/v1.8.9...v1.8.10) (2021-03-18)
+
+
+### Bug Fixes
+
+* document Knack.getQueryString() ([b2bba7f](https://gitlab.com/HumanoidSolutions/knack-types/commit/b2bba7f8ba6138d5b34c19707d6bdecb758b643c))
+
 ## [1.8.9](https://gitlab.com/HumanoidSolutions/knack-types/compare/v1.8.8...v1.8.9) (2021-03-17)
 
 
