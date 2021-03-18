@@ -12,3 +12,6 @@ notes/
 !.yarn/versions
 .pnp.*
 dist/*
+
+# Local history extension
+.history

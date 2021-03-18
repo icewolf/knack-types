@@ -8,7 +8,7 @@ before_script:
 
 
 variables:
-  NPM_TOKEN: ${CI_JOB_TOKEN}
+  NPM_TOKEN: ${KNACK_REPO_TOKEN}
 
 publish:
   image: node:14
