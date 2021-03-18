@@ -1,3 +1,11 @@
+## [1.8.14](https://gitlab.com/HumanoidSolutions/knack-types/compare/v1.8.13...v1.8.14) (2021-03-18)
+
+
+### Bug Fixes
+
+* build before semantic-release ([1f068be](https://gitlab.com/HumanoidSolutions/knack-types/commit/1f068befec8a74265a28ffc1fd6951b97f0b3676))
+* remove prepack from package.json ([3bf65b8](https://gitlab.com/HumanoidSolutions/knack-types/commit/3bf65b860c4c2ba164b499c0de1a9617aa59cafe))
+
 ## [1.8.13](https://gitlab.com/HumanoidSolutions/knack-types/compare/v1.8.12...v1.8.13) (2021-03-18)
 
 
