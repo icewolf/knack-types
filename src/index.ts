@@ -270,7 +270,8 @@ export interface KnViewAttributes {
 }
 
 export interface GetValuesOptions {
-  local?: boolean; // prevents showing stuff like recurring event edit modal
+  /** Prevents showing things such as recurring event edit modal */
+  local?: boolean;
   ignore_read_only?: boolean;
 }
 
