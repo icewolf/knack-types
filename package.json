@@ -9,8 +9,7 @@
     "dist/**"
   ],
   "scripts": {
-    "build": "tsc",
-    "prepack": "npm run build"
+    "build": "tsc"
   },
   "devDependencies": {
     "@semantic-release/changelog": "^5.0.1",
