@@ -17,6 +17,7 @@ publish:
     paths:
       - .yarn
   script:
+    - yarn build
     - npx semantic-release
   rules:
     - if: $CI_COMMIT_BRANCH == $CI_DEFAULT_BRANCH
