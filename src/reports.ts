@@ -77,12 +77,6 @@ export interface Source {
   object: string;
 }
 
-export interface Rule {
-  field: string;
-  operator: Operator;
-  value: boolean | string;
-}
-
 export interface Summary {
   label: string;
   calc: string;
