@@ -1,3 +1,5 @@
+import { ReportRow } from './reports';
+
 export type connectionPickerFn = (this: JQuery, options: KnConnectionGenOptions) => JQuery;
 
 interface KnJQuery extends JQueryStatic {
@@ -248,6 +250,7 @@ export interface KnViewModelView {
   rss?: boolean;
   pagination_meta?: ViewPaginationMeta;
   rules?: FormRules;
+  rows?: ReportRow[];
 }
 
 export type KnIconAlign = 'left' | 'right';
