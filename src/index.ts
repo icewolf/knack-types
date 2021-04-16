@@ -561,6 +561,7 @@ export interface KnFilterRule {
   operator: string;
   value?: any;
   field_name?: string;
+  header?: string;
 }
 export interface KnFilter {
   match: string | 'and' | 'or';
