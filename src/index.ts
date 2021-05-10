@@ -586,7 +586,7 @@ export interface KnConnectionGenInput {
 export interface KnConnectionGenOptions {
   view_key: string;
   input: KnConnectionGenInput;
-  value: KnConnection[];
+  value: (Partial<KnConnection> | string)[];
   record_id?: string;
 }
 
