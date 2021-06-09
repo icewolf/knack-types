@@ -2,21 +2,18 @@ import { ReportRow } from './reports';
 
 export type connectionPickerFn = (this: JQuery, options: KnConnectionGenOptions) => JQuery;
 
-declare interface JQuery {
+interface KnJquery<TElement = HTMLElement> extends JQuery<TElement> {
   connectionPicker: connectionPickerFn;
 }
 
-interface KnJQueryStatic extends JQueryStatic {
+interface KnJQueryStatic extends KnJquery {
   utility_forms: {
     renderMessage(el: JQuery, msg: string, type?: string): undefined;
   };
-  // fn: JQuery & {
-  //   redactor: any;
-  // };
+  fn: JQuery & {
+    redactor: any;
+  };
 }
-
-const Knack = {} as KnRoot;
-const el = Knack.$;
 
 export interface HashScene {
   slug: string;
@@ -338,7 +335,7 @@ export interface KnView extends Backbone.Model {
   /** Available on all views, except checkout */
   el?: HTMLDivElement;
   /** Available on all views, except checkout */
-  $el?: JQuery;
+  $el?: KnJquery<HTMLDivElement>;
   getInputs?: () => FormInputField[];
   getValues?(options?: GetValuesOptions): KnViewValues;
   getFilters?(): KnFilter | KnFilterRule[];
@@ -599,7 +596,7 @@ export interface KnConnectionGenOptions {
 type DomMethodType = 'overwrite' | 'overwrite';
 
 export interface KnRouterScene {
-  $el: JQuery;
+  $el: KnJquery<HTMLDivElement>;
   auto_link: boolean;
   dom_method: DomMethodType;
   el: HTMLDivElement;
