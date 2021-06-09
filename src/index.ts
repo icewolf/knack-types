@@ -12,6 +12,7 @@ interface KnJQueryStatic extends JQueryStatic {
   };
   fn: JQuery & {
     redactor: any;
+    connectionPicker: connectionPickerFn;
   };
 }
 
