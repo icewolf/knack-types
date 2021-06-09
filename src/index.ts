@@ -6,7 +6,7 @@ interface KnJquery<TElement = HTMLElement> extends JQuery<TElement> {
   connectionPicker: connectionPickerFn;
 }
 
-interface KnJQueryStatic extends KnJquery {
+interface KnJQueryStatic extends JQueryStatic {
   utility_forms: {
     renderMessage(el: JQuery, msg: string, type?: string): undefined;
   };
