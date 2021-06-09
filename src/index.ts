@@ -2,22 +2,28 @@ import { ReportRow } from './reports';
 
 export type connectionPickerFn = (this: JQuery, options: KnConnectionGenOptions) => JQuery;
 
-interface KnJQuery extends JQueryStatic {
+declare interface JQuery {
+  connectionPicker: connectionPickerFn;
+}
+
+interface KnJQueryStatic extends JQueryStatic {
   utility_forms: {
     renderMessage(el: JQuery, msg: string, type?: string): undefined;
   };
-  fn: JQuery & {
-    connectionPicker: connectionPickerFn;
-    redactor: any;
-  };
+  // fn: JQuery & {
+  //   redactor: any;
+  // };
 }
+
+const Knack = {} as KnRoot;
+const el = Knack.$;
 
 export interface HashScene {
   slug: string;
   key?: string;
 }
 export interface KnRoot {
-  $: KnJQuery;
+  $: KnJQueryStatic;
   views: KnViews;
   objects: KnObjects;
   fields: {
@@ -251,6 +257,8 @@ export interface KnViewModelView {
   pagination_meta?: ViewPaginationMeta;
   rules?: FormRules;
   rows?: ReportRow[];
+  /** (details view) Hide empty fields. */
+  hide_fields?: boolean;
 }
 
 export type KnIconAlign = 'left' | 'right';
@@ -350,9 +358,7 @@ export interface KnViewCalendar extends KnView {
   end_date: Date;
   event_key: string;
   label_key: string;
-  convertDate: (
-    date: KnDate
-  ) => {
+  convertDate: (date: KnDate) => {
     start: Date;
     end?: Date;
   };
