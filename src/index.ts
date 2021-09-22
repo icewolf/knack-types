@@ -39,8 +39,10 @@ export interface KnRoot {
   getQueryString: (newQueryString?: { [key: string]: string }) => string;
   router: KnRouter;
   scenes: KnSceneCollection;
+  modals: JQuery<HTMLDivElement[]>;
   [key: string]: any;
 }
+
 export interface KnSceneAttributes {
   _id: string;
   authenticated: boolean;
