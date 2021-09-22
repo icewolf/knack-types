@@ -2,7 +2,7 @@ import { ReportRow } from './reports';
 
 export type connectionPickerFn = (this: JQuery, options: KnConnectionGenOptions) => JQuery;
 
-interface KnJquery<TElement = HTMLElement> extends JQuery<TElement> {
+interface KnJquery extends JQuery {
   connectionPicker: connectionPickerFn;
 }
 
@@ -39,9 +39,10 @@ export interface KnRoot {
   getQueryString: (newQueryString?: { [key: string]: string }) => string;
   router: KnRouter;
   scenes: KnSceneCollection;
-  modals: JQuery<HTMLDivElement[]>;
+  modals: JQuery;
   [key: string]: any;
 }
+
 
 export interface KnSceneAttributes {
   _id: string;
@@ -338,7 +339,7 @@ export interface KnView extends Backbone.Model {
   /** Available on all views, except checkout */
   el?: HTMLDivElement;
   /** Available on all views, except checkout */
-  $el?: KnJquery<HTMLDivElement>;
+  $el?: KnJquery;
   getInputs?: () => FormInputField[];
   getValues?(options?: GetValuesOptions): KnViewValues;
   getFilters?(): KnFilter | KnFilterRule[];
@@ -599,7 +600,7 @@ export interface KnConnectionGenOptions {
 type DomMethodType = 'overwrite' | 'overwrite';
 
 export interface KnRouterScene {
-  $el: KnJquery<HTMLDivElement>;
+  $el: KnJquery;
   auto_link: boolean;
   dom_method: DomMethodType;
   el: HTMLDivElement;

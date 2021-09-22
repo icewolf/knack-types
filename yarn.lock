@@ -229,26 +229,7 @@
     parse-path "^4.0.0"
     url-join "^4.0.0"
 
-"@semantic-release/npm@^7.0.0":
-  version "7.0.10"
-  resolved "https://registry.yarnpkg.com/@semantic-release/npm/-/npm-7.0.10.tgz"
-  integrity sha512-DXFEhgSt5u22imTWbw8wfcVGB90nFJNcjUBtJI3zswJojzZ7yXpY4i2Va5RBRQRTtj00BfG0stbilAtKrKp35g==
-  dependencies:
-    "@semantic-release/error" "^2.2.0"
-    aggregate-error "^3.0.0"
-    execa "^5.0.0"
-    fs-extra "^9.0.0"
-    lodash "^4.17.15"
-    nerf-dart "^1.0.0"
-    normalize-url "^5.0.0"
-    npm "^6.14.9"
-    rc "^1.2.8"
-    read-pkg "^5.0.0"
-    registry-auth-token "^4.0.0"
-    semver "^7.1.2"
-    tempy "^1.0.0"
-
-"@semantic-release/npm@^7.0.10":
+"@semantic-release/npm@^7.0.0", "@semantic-release/npm@^7.0.10":
   version "7.0.10"
   resolved "https://registry.yarnpkg.com/@semantic-release/npm/-/npm-7.0.10.tgz#85e5b201e71896ecc3f45d7a496f5485f97df0b8"
   integrity sha512-DXFEhgSt5u22imTWbw8wfcVGB90nFJNcjUBtJI3zswJojzZ7yXpY4i2Va5RBRQRTtj00BfG0stbilAtKrKp35g==
@@ -336,12 +317,17 @@
     "@types/jquery" "*"
     "@types/jqueryui" "*"
 
-"@types/jquery@*", "@types/jquery@^3.3.31":
+"@types/jquery@*":
   version "3.5.4"
   resolved "https://registry.yarnpkg.com/@types/jquery/-/jquery-3.5.4.tgz"
   integrity sha512-//9CHhaUt/rurMJTxGI+I6DmsNHgYU6d8aSLFfO5dB7+10lwLnaWT0z5GY/yY82Q/M+B+0Qh3TixlJ8vmBeqIw==
   dependencies:
     "@types/sizzle" "*"
+
+"@types/jquery@1":
+  version "1.10.37"
+  resolved "https://registry.yarnpkg.com/@types/jquery/-/jquery-1.10.37.tgz#77c3a36c1b3068267dc786a44e234a7b10e33fbd"
+  integrity sha512-qvBtd5A/mmeeDBPM7yhTCushV9pNFLy2Wwb7nxO7fO9CNNWhV1Ay885vVtxIvfyGAWvPbN424vpzgaEOXYrlNQ==
 
 "@types/jqueryui@*", "@types/jqueryui@^1.12.9":
   version "1.12.13"
