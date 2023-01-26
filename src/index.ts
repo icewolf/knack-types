@@ -40,9 +40,39 @@ export interface KnRoot {
   router: KnRouter;
   scenes: KnSceneCollection;
   modals: JQuery;
+  distributions: Backbone.Collection<Distribution>;
   [key: string]: any;
 }
+export interface Distribution extends Backbone.Model {
+  design: DistributionDesign;
+  customized: boolean;
+  default: boolean;
+  theme: 'default' | string;
+  mode: 'embed' | string;
+  method: 'javascript' | string;
+  domains: string[];
+  key: string;
+  name: string;
+  scene: string;
+  _id: string;
+}
 
+export interface DistributionDesign {
+  header: DistributionDesignHeader;
+  general: DistributionDesignGeneral;
+}
+
+export interface DistributionDesignGeneral {
+  fonts: DistributionDesignFonts;
+}
+
+export interface DistributionDesignFonts {
+  show: boolean;
+}
+
+export interface DistributionDesignHeader {
+  display: 'menu' | string;
+}
 
 export interface KnSceneAttributes {
   _id: string;
