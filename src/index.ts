@@ -40,10 +40,10 @@ export interface KnRoot {
   router: KnRouter;
   scenes: KnSceneCollection;
   modals: JQuery;
-  distributions: Backbone.Collection<Distribution>;
+  distributions: Backbone.Collection<Backbone.Model<Distribution>>;
   [key: string]: any;
 }
-export interface Distribution extends Backbone.Model {
+export interface Distribution {
   design: DistributionDesign;
   customized: boolean;
   default: boolean;
