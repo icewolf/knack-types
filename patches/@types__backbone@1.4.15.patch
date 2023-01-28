@@ -1,0 +1,13 @@
+diff --git a/package.json b/package.json
+index 2631601d313c675aa4d4e4824460dce6c6c93530..24468ee487ba4562111ba3d398fff283e2f4e8b2 100755
+--- a/package.json
++++ b/package.json
+@@ -55,7 +55,7 @@
+     },
+     "scripts": {},
+     "dependencies": {
+-        "@types/jquery": "*",
++        "@types/jquery": "^3",
+         "@types/underscore": "*"
+     },
+     "typesPublisherContentHash": "0ad09c238533794819ad2bc453b6d2edab5b4afb7089ea5fc2023340165c5bbd",
