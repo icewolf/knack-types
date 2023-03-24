@@ -7,4 +7,3 @@ plugins:
     - "@semantic-release/git"
     - assets:
       - package.json
-  - "@semantic-release/gitlab"
