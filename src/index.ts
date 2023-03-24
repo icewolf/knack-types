@@ -255,13 +255,42 @@ export interface FormRules {
   submits: SubmitFormRule[];
 }
 
-export interface SubmitFormRule {
+export type BaseSubmitFormRule = {
   key: string;
-  action: string;
+} & ({ is_default: boolean } | { criteria: KnFilterRule[] });
+export interface SubmitFormRuleMessage {
+  action: 'message';
   message: string;
-  reload_show: boolean;
-  is_default: boolean;
+  reload_show?: boolean;
+  reload_auto?: boolean;
 }
+export type SubmitFormRuleChildPage = BaseSubmitFormRule & {
+  action: 'child_page';
+  /**
+   * Slug of child page to redirect to on submit.
+   */
+  scene: string;
+};
+export type SubmitFormRuleExistingPage = BaseSubmitFormRule & {
+  action: 'existing_page';
+  /**
+   * Slug of existing page to redirect to on submit.
+   */
+  existing_page: string;
+};
+export type SubmitFormRuleParentPage = BaseSubmitFormRule & {
+  action: 'parent_page';
+};
+export type SubmitFormRuleUrl = BaseSubmitFormRule & {
+  action: 'url';
+  url: string;
+};
+export type SubmitFormRule =
+  | SubmitFormRuleMessage
+  | SubmitFormRuleExistingPage
+  | SubmitFormRuleChildPage
+  | SubmitFormRuleParentPage
+  | SubmitFormRuleUrl;
 
 export interface KnViewModelView {
   key: string;
@@ -292,7 +321,7 @@ export interface KnViewModelView {
   hide_fields?: boolean;
   /**
    * Child pages the view links to.
-   * 
+   *
    * Note: does not seem to include pages from submit rules.
    */
   child_scenes: string[];
