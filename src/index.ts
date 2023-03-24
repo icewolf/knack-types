@@ -293,7 +293,7 @@ export interface KnViewModelView {
   /**
    * Child pages the view links to.
    * 
-   * Note: does not seem to include pages from submit rules .
+   * Note: does not seem to include pages from submit rules.
    */
   child_scenes: string[];
   child_views: string[];
