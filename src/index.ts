@@ -290,6 +290,14 @@ export interface KnViewModelView {
   rows?: ReportRow[];
   /** (details view) Hide empty fields. */
   hide_fields?: boolean;
+  /**
+   * Child pages the view links to.
+   * 
+   * Note: does not seem to include pages from submit rules .
+   */
+  child_scenes: string[];
+  child_views: string[];
+  child_child_views: string[];
 }
 
 export type KnIconAlign = 'left' | 'right';
