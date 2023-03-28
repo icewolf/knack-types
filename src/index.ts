@@ -311,7 +311,6 @@ export type KnViewModelView = {
   filters: KnFilter | KnFilterRule[];
   filter_type: 'fields' | 'menu';
   details?: ViewStructure;
-  columns?: ViewStructureColumn[];
   ical?: boolean;
   rss?: boolean;
   pagination_meta?: ViewPaginationMeta;
