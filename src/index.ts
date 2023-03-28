@@ -334,7 +334,7 @@ export type KnViewModelView = {
     }
   | {
       type: KnViewType.Table;
-      columns: ViewGroupColumn;
+      columns: ViewGroupColumn[];
     }
 );
 
