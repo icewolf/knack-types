@@ -212,7 +212,7 @@ export interface ViewGroup {
 export interface ViewGroupColumn {
   key: string;
   name: string;
-  field?: Partial<KnFieldAttributes>;
+  field?: Pick<KnFieldAttributes, 'key'>;
   type?: string;
   thumb_key?: string;
   object?: Connection;
@@ -292,7 +292,7 @@ export type SubmitFormRule =
   | SubmitFormRuleParentPage
   | SubmitFormRuleUrl;
 
-export interface KnViewModelView {
+export type KnViewModelView = {
   key: string;
   mode: string;
   name: string;
@@ -327,7 +327,16 @@ export interface KnViewModelView {
   child_scenes: string[];
   child_views: string[];
   child_child_views: string[];
-}
+} & (
+  | {
+      type: Exclude<KnViewType, KnViewType.Table>;
+      columns?: ViewStructureColumn[];
+    }
+  | {
+      type: KnViewType.Table;
+      columns: ViewGroupColumn;
+    }
+);
 
 export type KnIconAlign = 'left' | 'right';
 
