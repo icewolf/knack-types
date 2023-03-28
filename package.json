@@ -1,6 +1,6 @@
 {
   "name": "@icewolf/knack-types",
-  "version": "1.2.0",
+  "version": "1.2.1",
   "license": "UNLICENSED",
   "repository": "https://github.com/icewolf/knack-types.git",
   "main": "dist/index.js",
