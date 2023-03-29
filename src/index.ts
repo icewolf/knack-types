@@ -76,15 +76,19 @@ export interface DistributionDesignHeader {
 
 export interface KnSceneAttributes {
   _id: string;
-  authenticated: boolean;
+  authenticated?: boolean;
   modal: boolean;
   print: boolean;
-  parent: string;
+  parent?: string | null;
+  name: string;
+  type: string;
   slug: string;
   key: string;
   scene_id?: string;
-  object?: string;
+  object?: string | null;
   views: KnViewModelView[];
+  icon?: KnIcon;
+  ignore_entry_scene_menu?: boolean;
   [key: string]: any;
 }
 
