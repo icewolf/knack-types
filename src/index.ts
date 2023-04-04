@@ -262,12 +262,12 @@ export interface FormRules {
 export type BaseSubmitFormRule = {
   key: string;
 } & ({ is_default: boolean } | { criteria: KnFilterRule[] });
-export interface SubmitFormRuleMessage {
+export type SubmitFormRuleMessage = BaseSubmitFormRule & {
   action: 'message';
   message: string;
   reload_show?: boolean;
   reload_auto?: boolean;
-}
+};
 export type SubmitFormRuleChildPage = BaseSubmitFormRule & {
   action: 'child_page';
   /**
